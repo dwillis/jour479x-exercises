@@ -327,12 +327,6 @@ Now, in the box below, and remembering that all spreadsheet formulas start with 
 
 `=(H2-G2)/G2`
 
-|In Excel|In Google Spreadsheets|
-|--------|----------------------|
-|![Change screenshot 1 in Excel](images/excelchange1.png "Excel change 1")|![Change screenshot 1 in Google Spreadsheets](images/googlechange1.png "Google sort 1")|
-
-**NOTE: The screenshots are from a previous iteration and have not been updated yet. The formula above is correct, but uses older cell references. The screenshots here are for visual reference.**
-
 When you hit enter, you'll have the percent change in attendance for Illinois.
 
 Click back on the cell that has the percent change you just calculated in it. See the small black square on the bottom right corner of you box? Double click that.
