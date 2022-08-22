@@ -291,15 +291,15 @@ Let's ask this question: what percentage of students come from New Jersey compar
 
 ##### How to calculate a percentage in a spreadsheet
 
-Open the file -- [you can download it here](https://www.dropbox.com/s/ilk87n6ug1l7v53/students.csv?dl=0) -- and in Column W, Row 1, let's add a new header called Percentage Male.
+Open the file -- [you can download it here](https://raw.githubusercontent.com/dwillis/jour479x-exercises/master/Data/umd_students.csv) -- and in Column D, Row 1, let's add a new header called Percent of Total.
 
-Then, in Column F Row 2, let's calculate our percentage. So we want to take the subset (male students in this case) and divide it by the total (the column labeled Total). So our formula will look like this: `=U2/T2`
+Then, in Column D Row 2, let's calculate our percentage. So we want to take the subset (each jurisdiction) and divide it by the total (the row labeled Total). We need to anchor our total because it doesn't change, so our formula will look like this: `=C2/$C$36`
 
 Really, that's it. Copy the formula down by double clicking on the notch on the bottom left of the cell. Now sort it largest to smallest (descending order). What do you get?
 
 ##### How to turn a percentage into a story
 
-Percents of a whole end up in stories all over the place. In the case of our student data here, I'd want to know why. Why does one college have far more men than women, or vice versa? What attempts are there to recruit women into male dominated fields? What efforts are there to recruit men into female dominated fields? What's driving this? And (looking to the topic of the next section) how has this changed over time?
+Percents of a whole end up in stories all over the place. In the case of our student data here, I'd want to know why. Why do New Jersey residents make up nearly 6% of the student body, compared to about 2% from Virginia? What's driving this? And (looking to the topic of the next section) how has this changed over time?
 
 ## Percent change
 
@@ -325,13 +325,13 @@ Remember the formula?
 
 Percent changes are extremely common in spreadsheets and data journalism. And this is where they shine. For both Google and Excel, the formula is the same.
 
-Let's try a new dataset. This one is called population.csv -- [download it here](https://www.dropbox.com/s/nqs144kwpaxcc2q/population.csv?dl=0) -- and it is the estimated population of every county in the US. This is a dataset released every year by the U.S. Census Bureau, and it's the best guess they have on how many people live in a county between the every 10 year census that counts everyone. It's also a great way to see if your county is growing or not, and how fast in relation to others in the state or country.
+Let's try a new dataset. This one is called bigten_fbattendance.csv -- [download it here](https://raw.githubusercontent.com/dwillis/jour479x-exercises/master/Data/bigten_fbattendance.csv) -- and it is the total football attendance for Big Ten schools from 2014-2019.
 
 Open the file in your spreadsheet software -- File/Open in Excel, File/Import in Google -- and take a look. It's pretty simple. The first thing we're going to do is create a new header at the end of the filled columns. Click on the first empty box in row one and type `Change`.
 
 Now, in the box below, and remembering that all spreadsheet formulas start with an equal sign, we're going to enter our percent change formula. An example would be:
 
-`=(J2-E2)/E2`
+`=(H2-G2)/G2`
 
 |In Excel|In Google Spreadsheets|
 |--------|----------------------|
@@ -339,20 +339,20 @@ Now, in the box below, and remembering that all spreadsheet formulas start with 
 
 **NOTE: The screenshots are from a previous iteration and have not been updated yet. The formula above is correct, but uses older cell references. The screenshots here are for visual reference.**
 
-When you hit enter, you'll have the percent change in population for Autauga County, Alabama.
-
-Great. But where's that? Do I have to type this formula another 3,400 times to get them all?
-
-Nope.
+When you hit enter, you'll have the percent change in attendance for Illinois.
 
 Click back on the cell that has the percent change you just calculated in it. See the small black square on the bottom right corner of you box? Double click that.
 
-And just like that, you've calculated the percent change in population in every county in the United States.
+And just like that, you've calculated the percent change for all schools.
 
 ##### How to turn a percent change into a story
 
-Percent changes by themselves are rarely interesting, but what happens if we add a sort to this? Remember, we can sort two ways. What stories pop out when you sort for the fastest shrinking counties first? What happens when you sort for fastest growing? Do national stories emerge? Do local stories emerge? What are they?
+Percent changes by themselves are rarely interesting, but what happens if we add a sort to this? Remember, we can sort two ways. What stories pop out when you sort for the fastest shrinking schools first? What happens when you sort for fastest growing? What happens when you calculate the change over a different time period?
 
 ## For the assignment
 
-Answer the following questions: What is the fastest growing county in the United States? What is the fastest shrinking? 
+Answer the following questions: Which Big Ten school had the largest percentage change between 2014-2019? Which had the smallest? What does that calculation obscure? Put your answers below, add and commit this file to GitHub and submit the URL of this notebook (for example, mine is https://github.com/dwillis/jour479x-exercises/blob/master/Assignments/01_BeginningSpreadsheets/BeginningSpreadsheets.Rmd) in ELMS.
+
+**Answers**
+
+
