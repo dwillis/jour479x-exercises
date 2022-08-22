@@ -17,12 +17,6 @@ This module is designed to solve a particular problem: How do you get basic data
 
 Contained in this repository are the datasets used to illustrate the concepts. They are kept here in .csv format, so you can use Excel or Google Spreadsheets to do the same analysis. The spreadsheet formulas and concepts will work on any of those three software platforms.
 
-> ### Where to get data for these exercises
-
-> All of the data for this set of exercises is [in a Dropbox folder](https://www.dropbox.com/sh/pj1xukyrvi6v688/AAC-Yzprr1JUgS2Pd37HY15ua?dl=0). It is public data. You are free to use it as you want.
-
-
-
 ## Introduction
 
 ##### Bad at math is a lie
