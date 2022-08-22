@@ -1,15 +1,15 @@
-school,graduation_rate
-Indiana University-Bloomington,80
-Michigan State University,81
-Northwestern University,95
-Ohio State University-Main Campus,87
-Pennsylvania State University-Main Campus,
-Purdue University-Main Campus,83
-Rutgers University-New Brunswick,84
-University of Illinois Urbana-Champaign,86
-University of Iowa,72
-University of Maryland-College Park,87
-University of Michigan-Ann Arbor,93
-University of Minnesota-Twin Cities,84
-University of Nebraska-Lincoln,66
-University of Wisconsin-Madison,88
+UnitID,Institution Name,Graduation rate  total cohort (DRVGR2020),Total price for in-state students living on campus 2019-20 (DRVIC2019),Total price for out-of-state students living on campus 2019-20 (DRVIC2019)
+151351,Indiana University-Bloomington,80,25657,51222
+171100,Michigan State University,81,29130,54436
+147767,Northwestern University,95,78654,78654
+204796,Ohio State University-Main Campus,87,27912,48889
+214777,Pennsylvania State University-Main Campus,,36962,54026
+243780,Purdue University-Main Campus,83,22882,41684
+186380,Rutgers University-New Brunswick,84,33457,50239
+145637,University of Illinois Urbana-Champaign,86,30302,47444
+153658,University of Iowa,72,24806,46769
+163286,University of Maryland-College Park,87,27866,53978
+170976,University of Michigan-Ann Arbor,93,31056,66698
+174066,University of Minnesota-Twin Cities,84,28819,47117
+181464,University of Nebraska-Lincoln,66,25716,42022
+240444,University of Wisconsin-Madison,88,26553,53613

@@ -131,9 +131,9 @@ Knowing when to use average and when to use median takes a little bit of thinkin
 
 Let's pretend for a second that I'm taking a poll of a college class of 5 students on how much everyone makes per year. It's full of students, so the annual salaries are \$8,000, \$9,500, \$7,200, \$10,000 and \$6,400. That makes the average annual income of these five students \$8,220 (we'll talk about how to calculate the average in the next section). In our group of five students, given their incomes, \$8,220 is pretty much in the middle. A student might make a little more, or a little less, but $8,220 is in the ballpark.
 
-But I teach at the University of Nebraska. And we love us some football. And surprise! Head Coach Scott Frost visits class. He makes $5 million. Per year.
+But I teach at the University of Maryland. And surprise! Head Coach Mike Locksley visits class. He makes $4 million. Per year.
 
-The average salary now? $874,433. Who feels average now?
+The average salary now? $673,516. Who feels average now?
 
 (This problem gets solved in a later section)
 
@@ -189,7 +189,7 @@ And, when we hit enter, we get our answer: $8,220.
 
 One of the main uses for an average is to compare how something fares against the middle. Is it above average or below average? And how much?
 
-One thing you might want to do is compare your university's graduation rate compared to other schools like yours. For this example, [I've provided a CSV file of schools in the Big 10 athletic conference](https://www.dropbox.com/s/1pcft4ib0hq8mlx/colleges.csv?dl=0) that you should download (math alert: has 14 schools in it). If you'd like to get your own athletic conference, this data comes from the US federal Department of Educations [IPEDS](https://nces.ed.gov/ipeds/datacenter/Default.aspx) database.
+One thing you might want to do is compare your university's graduation rate compared to other schools like yours. For this example, [I've provided a CSV file of schools in the Big 10 athletic conference](https://raw.githubusercontent.com/dwillis/jour479x-exercises/master/Data/bigten_gradrates_2020.csv) that you should download (math alert: has 14 schools in it). If you'd like to get your own athletic conference, this data comes from the US federal Department of Educations [IPEDS](https://nces.ed.gov/ipeds/datacenter/Default.aspx) database.
 
 Question: What is the average graduation rate among Big 10 schools?
 
@@ -208,19 +208,15 @@ In Google Spreadsheets, it's also easy, but not quite as straightforward. In Goo
 
 So you can see now we have five columns of data. A unit ID, the name of the institution, the cost of 30 credit hours -- or one academic year -- for in state students, that same cost for out-of-state students and the graduation rate of what's called the six-year cohort. That six-year cohort is the percent of students who had graduated who started six years before. That's the metric most universities look at to compare each other.
 
-So, from our last example, we know we can go to row 16 column E and work our AVERAGE magic.
-
-**Google spreadsheet users: You'll need to add a row to work with. There's a button at the bottom to just add 20 rows. That will work nicely.**
+So, from our last example, we know we can go to row 16 column C and work our AVERAGE magic.
 
 |In Excel|In Google Spreadsheets|
 |--------|----------------------|
 |![Means screenshot 5 in Excel](images/excelmean5.png "Excel mean 5")|![Means screenshot 5 in Google Spreadsheets](images/googlemean5.png "Google mean 2")|
 
-And when we hit enter, we see that the Big 10 graduates 79.3 percent of students in six years. By eyeballing it, we can see some schools, like Northwestern, graduate nearly all of their students in six years. And, on the opposite end of the spectrum, we see the University of Nebraska-Lincoln, my employer, graduating only 65 percent of students in six years.
+And when we hit enter, we see that the Big 10 graduates 83.5 percent of students in six years. By eyeballing it, we can see some schools, like Northwestern, graduate nearly all of their students in six years. And, on the opposite end of the spectrum, we see the University of Nebraska-Lincoln graduating only 66 percent of students in six years.
 
-Uh oh.
-
-So the first question that jumps out at you should be a very simple one: Why?
+So the first question that jumps out at you should be a very simple one: Why? Also, what's with Penn State?
 
 Congratulations. You got your first story idea from data. But is eyeballing it the best way to look at this? Nope.
 
@@ -275,11 +271,11 @@ Fortunately, spreadsheets make medians easy. And again, it's the same regardless
 
 `=MEDIAN(FirstCellInTheRange:LastCellInTheRange)`
 
-So, with our college cost spreadsheet still open, let's compare the Average to the Median. Column C is the In State Cost and Column D is the Out of State Cost. Immediately underneath the last record, in row 16 and in column C, let's calculate the Average In State Cost. It's `=AVERAGE(C2:C15)` and you get \$27652.86. Under that, in Row 17 Column C, let's calculate the Median In State Cost. To do that, it's `=MEDIAN(C2:C15)` and you get \$24473.50. See that? The median is about \$3,000 cheaper than the average. You can do the same with Out of State costs, but the difference is much less significant.
+So, with our college cost spreadsheet still open, let's compare the Average to the Median. Column D is the In State Cost and Column E is the Out of State Cost. Immediately underneath the last record, in row 16 and in column D, let's calculate the Average In State Cost. It's `=AVERAGE(D2:D15)` and you get \$32126.57 Under that, in Row 17 Column D, let's calculate the Median In State Cost. To do that, it's `=MEDIAN(D2:D15)` and you get \$28365.50 See that? The median is about \$4,000 cheaper than the average. You can do the same with Out of State costs, but the difference is less significant.
 
 ##### How to turn a median into a story
 
-In 2004, at the dawn of what would become a economy-killing real estate bubble, I was working at a newspaper in Florida, which was one of the key states in the whole mess. But at the time, people were just astonished at how fast homes were selling and for how much. So I set out to quantify it. And what we found was that neighborhood after neighborhood, street by street, the entire area was being transformed by skyrocketing home prices. The entire story was built on medians. I used geographic information systems -- maps -- to calculate the median sale prices of a home in a neighborhood in a given year and then I calculated the same median home price in the current year, and did a percent change calculation.
+In 2004, at the dawn of what would become a economy-killing real estate bubble, Matt Waite was working at a newspaper in Florida, which was one of the key states in the whole mess. But at the time, people were just astonished at how fast homes were selling and for how much. So he set out to quantify it. And what we found was that neighborhood after neighborhood, street by street, the entire area was being transformed by skyrocketing home prices. The entire story was built on medians. He used geographic information systems -- maps -- to calculate the median sale prices of a home in a neighborhood in a given year and then calculated the same median home price in the current year, and did a percent change calculation.
 
 ## Percentages of a whole
 
@@ -289,13 +285,11 @@ Percentages of a whole are a very basic measure of just how much of the whole a 
 
 ##### How to calculate a percentage
 
-Let's look at the students in colleges at the University of Nebraska-Lincoln. Every year, the university performs a census of students across campus shortly after classes start. That census produces tons of data, but one of the most interesting is the students by degree, major, race and sex. 
+Let's look at where students at the University of Maryland come from. Every year, the university performs a census of students across campus shortly after classes start. That census produces tons of data, but one of the most interesting is students by place of residence. Inside Maryland, that's the county (or Baltimore city). Outside, it's nearby states and other areas. 
 
-There are scores of stories in the overall data broken down to each major, but for simplicity, let's look at the colleges. More specifically, let's ask this question: Which college has the greatest gender imbalance?
+Let's ask this question: what percentage of students come from New Jersey compared to Virginia? Compared to some Maryland counties?
 
 ##### How to calculate a percentage in a spreadsheet
-
-In the dataset, there's 10 colleges -- 9 actual colleges and one called Explore Center, which are how undeclared students are grouped together. It's included because it's larger than three colleges. 
 
 Open the file -- [you can download it here](https://www.dropbox.com/s/ilk87n6ug1l7v53/students.csv?dl=0) -- and in Column W, Row 1, let's add a new header called Percentage Male.
 

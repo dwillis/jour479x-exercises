@@ -1,0 +1,36 @@
+﻿Type,Jurisdiction,Students
+Out,Unknown,155
+Out,Foreign,639
+Out,Dist. of Columbia,143
+Out,New Jersey,"1,718"
+Out,New York,962
+Out,Pennsylvania,715
+Out,Virginia,560
+Out,Other States,"2,200"
+Out,Subtotal,"7,092"
+In,MD Unknown County,2
+In,Anne Arundel,"1,753"
+In,Baltimore,"1,994"
+In,Calvert,308
+In,Caroline,32
+In,Carroll,517
+In,Cecil,142
+In,Charles,355
+In,Dorchester,22
+In,Frederick,"1,133"
+In,Harford,609
+In,Howard,"2,787"
+In,Kent,22
+In,Montgomery,"8,800"
+In,Prince George's,"2,368"
+In,Queen Anne's,141
+In,St. Mary's,178
+In,Somerset,6
+In,Talbot,67
+In,Washington,208
+In,Wicomico,122
+In,Worcester,95
+In,Baltimore City,412
+In,Allegany,50
+In,Garrett,15
+,Total,29230
