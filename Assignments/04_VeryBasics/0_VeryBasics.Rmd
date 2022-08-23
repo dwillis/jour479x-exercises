@@ -54,10 +54,4 @@ You will see that the notebook adds a lot of text for you. It tells you how to w
 
 To add text, simply type. To add code you can click on the *Insert* button on the toolbar or by pressing *Cmd+Option+I* on Mac or *Ctl+Option+I* on PC.
 
-To run your code after you add it, click the green triangle on the right side of your code chunk. 
-
-### Assignment
-
-Create an R notebook (which you should have done earlier). In it, delete all the generated text from it, so you have a blank document. Then, write a sentence in the document telling me what the last thing you did in Swirl was. Then add a code block (see above about inserting) and add two numbers together. Any two numbers. Run that code block. Save the file and submit the .Rmd file created when you save it. 
-
-That's it. Simple.
+To run your code after you add it, click the green triangle on the right side of your code chunk.
